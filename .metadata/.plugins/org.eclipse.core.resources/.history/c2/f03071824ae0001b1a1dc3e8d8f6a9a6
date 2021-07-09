@@ -1,0 +1,23 @@
+package Application;
+
+import java.util.Locale;
+import java.util.Scanner;
+import Entidades.Dolar;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Dolar dolar = new Dolar();
+		
+		System.out.print("Digite a cotação do dólar: ");
+		dolar.cotacaoD = sc.nextDouble();
+		System.out.print("Quantos dólares deseja comprar? ");
+		dolar.quantDolar = sc.nextDouble();
+		
+		sc.close();
+	}
+
+}

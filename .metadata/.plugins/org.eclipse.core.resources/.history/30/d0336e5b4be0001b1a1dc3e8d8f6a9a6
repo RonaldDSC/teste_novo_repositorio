@@ -1,0 +1,12 @@
+package Entidades;
+
+public class Dolar {
+
+	public double cotacaoD;
+	public double quantDolar;
+	
+	public double valorReais() {
+		return cotacaoD * quantDolar;
+	}
+	
+}

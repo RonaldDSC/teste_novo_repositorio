@@ -1,0 +1,15 @@
+package Entidades;
+
+public class Dolar {
+	
+	public final double IOF = 6.0/100.0;
+
+	public double cotacaoD;
+	public double quantDolar;
+	
+	public double valorReais() {
+		return cotacaoD * quantDolar + IOF;
+				
+	}
+	
+}
